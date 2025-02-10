@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico.png" type="image/x-icon">
+    <style>
+        h1
+        {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1> Imagem Dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png " type="image/png">
+        <img src="imagens/fotog.png" alt="Imagem flexivel">
+    </picture>
+    <h1> Reproduzindo Audio</h1>
+    <p> Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="media/musiquinhayoutube.mp3" controls autoplay loop></audio>
+</body>
+</html>
